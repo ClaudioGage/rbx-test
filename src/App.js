@@ -6,6 +6,7 @@ import { Container } from "rbx";
 import NotificationExample from "./NotificationExample";
 import BreadcrumbExample from "./BreadcrumbExample";
 import CardExample from "./CardExample";
+import DropdownExample from "./DropdownExample";
 
 const App = () => {
   return (
@@ -13,6 +14,8 @@ const App = () => {
       <NotificationExample />
       <BreadcrumbExample />
       <CardExample />
+      <br />
+      <DropdownExample />
     </Container>
   );
 }
