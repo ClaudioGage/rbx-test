@@ -4,11 +4,13 @@ import React from "react";
 import "rbx/index.css";
 import { Container } from "rbx";
 import NotificationExample from "./NotificationExample";
+import BreadcrumbExample from "./BreadcrumbExample";
 
 const App = () => {
   return (
     <Container>
       <NotificationExample />
+      <BreadcrumbExample />
     </Container>
   );
 }
