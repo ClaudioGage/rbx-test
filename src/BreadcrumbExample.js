@@ -2,16 +2,15 @@ import React from "react";
 import { Breadcrumb } from "rbx";
 import "rbx/index.css";
 
-class BreadcrumbExample extends React.Component {
-  render() {
-    return (
-      <div>
-        <h2>
-          Breadcrumb component test
-        </h2>
-      </div>
-    );
-  }
+const BreadcrumbExample = () => {
+  return (
+    <Breadcrumb align={null}>
+      <Breadcrumb.Item>rbx</Breadcrumb.Item>
+      <Breadcrumb.Item>Documentation</Breadcrumb.Item>
+      <Breadcrumb.Item>Components</Breadcrumb.Item>
+      <Breadcrumb.Item active>Breadcrumb</Breadcrumb.Item>
+    </Breadcrumb>
+  );
 } 
 
 export default BreadcrumbExample;
