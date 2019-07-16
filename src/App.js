@@ -1,14 +1,15 @@
 
 import React from "react";
 
+// Conainer a simple container to center your content horizontally
+// Notification bold notification blocks, to alert your users of something
 import { Container, Delete, Notification } from "rbx";
 import "rbx/index.css";
 
 export class HelloWorldNotification extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { active: true };
-  }
+  state = { 
+    active: true 
+  };
 
   onClose = () => {
     this.setState({ active: false });
@@ -26,7 +27,7 @@ export class HelloWorldNotification extends React.Component {
       );
     }
     return (
-      <Notification color="primary">
+      <Notification color="danger">
         Welcome to{" "}
         <span role="img" aria-label="shoe">
           👟
